@@ -1,3 +1,3 @@
 <template>
-  <div class="text-5xl font-bold bg-yellow-50 p-4">Hello there</div>
+  <div class="text-5xl font-bold bg-warning-600 p-4">Hello there</div>
 </template>
