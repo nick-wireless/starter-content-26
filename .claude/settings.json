@@ -1,0 +1,18 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd \"${CLAUDE_PROJECT_DIR:-.}\" && pnpm lint-staged && pnpm typecheck",
+            "if": "Bash(git commit*)",
+            "statusMessage": "Running lint-staged + typecheck before commit",
+            "timeout": 120
+          }
+        ]
+      }
+    ]
+  }
+}
